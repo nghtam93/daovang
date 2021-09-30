@@ -1,0 +1,189 @@
+/*
+======================================
+[ Import Font ]
+======================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+/*
+======================================
+[ Header ]
+======================================
+*/
+header.header {
+    position: fixed;
+    top: -1px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+header.header .header__wrap{
+    width: 1565px;
+    display: flex;
+    justify-content: center;
+    background: url(../img/menu-bg.png) no-repeat center;
+    background-size: contain;
+    margin: auto;
+    padding: 15px 0 45px;
+    align-items: start;
+}
+header.header .logo{
+	margin-bottom: 0;
+	    padding: 0 60px;
+}
+/*
+======================================
+[ Main menu ]
+======================================
+*/
+.main__nav{
+	position:relative;
+	font-family: 'Bungee', cursive;
+	z-index:9;
+
+}
+.main__nav:after{content:"";display:table;clear:both;}
+.main__nav .sc__wrap{position:relative;z-index:9999;width:100%;}
+.main__nav ul{list-style:none;padding:0;margin:0;}
+.main__nav ul.el__menu{padding:0px 0;}
+.main__nav ul.el__menu:after{content:"";display:table;clear:both;}
+.main__nav ul.el__menu>li{position:relative;display:inline-block;padding: 0 20px;}
+.main__nav ul.el__menu>li>a{position:relative;color: #FFFAE9;line-height: 19px;font-weight: 400;font-size: 16px;
+	padding: 10px 22px;display:block;text-shadow: 2px 2px 0px #1D1A1A;
+border: 1px solid transparent;
+}
+.main__nav ul.el__menu>li:hover>a, .main__nav ul.el__menu>li.active>a{
+background-color: #723715;
+    border-radius: 8px;
+    border: 1px solid #FFCB36;
+    box-shadow: inset 0px 0px 4px #ffc300;
+    transition: all .5s;
+}
+.main__nav ul.el__menu>li>a::before,.main__nav ul.el__menu>li>a::after{
+
+}
+
+
+.main__nav ul.el__menu>li.active>a::before,.main__nav ul.el__menu>li.active>a::after,.main__nav ul.el__menu>li:hover>a::before,.main__nav ul.el__menu>li:hover>a::after {
+content: '';
+	width: 5px;
+	height: 5px;
+	background-color: #FFCB36;
+	position: absolute;
+	top: calc(50% - 2.5px);
+	left: -3px;
+	border-radius: 1px;
+	transform: rotate(45deg);
+}
+.main__nav ul.el__menu>li.active>a::after,.main__nav ul.el__menu>li:hover>a::after {
+	content: '';
+	left: auto;
+	right: -3px;
+}
+
+
+/*
+======================================
+[ Home Wellcome ]
+======================================
+*/
+.home-wellcome{
+	position: relative;
+	background: url(../img/home-wellcome-bg.jpg) no-repeat center;
+    background-size: 100% 100%;
+	height: 1145px;
+	overflow: hidden;
+}
+.home-wellcome .el__play{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 155px;
+	width: 264px;
+    height: 104px;
+	background: url(../img/playnow.png) no-repeat center;
+    background-size: contain;
+    margin: auto;
+}
+.home-wellcome .el__nextpage{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 68px;
+	width: 64px;
+	height: 48px;
+	background: url(../img/next-page.png) no-repeat center;
+    background-size: contain;
+    margin: auto;
+}
+.home-wellcome .el__nameplate{
+    position: absolute;
+    right: 139px;
+    bottom: 0;
+    width: 281px;
+    height: 295px;
+    background: url(../img/home-wellcome-table.png) no-repeat center;
+    background-size: contain;
+}
+.home-wellcome .el__nameplate .el__appstore{
+	position: absolute;
+	    top: 58px;
+    left: 54px;
+	width: 177px;
+	height: 46px;
+	background: url(../img/app-store.png) no-repeat center;
+    background-size: contain;
+}
+.home-wellcome .el__nameplate .el__googleplay{
+	position: absolute;
+	    top: 107px;
+    left: 54px;
+	width: 177px;
+	height: 45px;
+	background: url(../img/google-play.png) no-repeat center;
+    background-size: contain;
+}
+.el__owl{
+    position: absolute;
+    bottom: 310px;
+    right: 20px;
+    width: 144px;
+    height: 104px;
+	background: url(../img/owl.png) no-repeat center;
+    background-size: contain;
+}
+.el__peg{
+	position: absolute;
+    bottom: 55px;
+    left: 60px;
+    width: 133px;
+    height: 140px;
+	background: url(../img/peg.png) no-repeat center;
+    background-size: contain;
+}
+.el__fire{
+	position: absolute;
+    bottom: -85px;
+    left: 310px;
+    width: 380px;
+    height: 650px;
+	background: url(../img/fire.gif) no-repeat center;
+    background-size: contain;
+}
+.el__fire.-bottom--left{
+    bottom: 55px;
+    left: 60px;
+}
+.el__fire.-top--right{
+    bottom: 55px;
+    left: 60px;
+}
+
+.el__fire.-bottom--right{
+    bottom: 55px;
+    left: 60px;
+}
