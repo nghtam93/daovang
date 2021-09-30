@@ -7,7 +7,9 @@
 
 a{text-decoration:none;}
 a:hover{text-decoration:none;}
-
+body{
+	min-width: 1900px;
+}
 /*
 ======================================
 [ Header ]
@@ -102,7 +104,7 @@ content: '';
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 155px;
+	bottom: 175px;
 	width: 264px;
     height: 104px;
 	background: url(../img/playnow.png) no-repeat center;
@@ -113,7 +115,7 @@ content: '';
 	position: absolute;
 	left: 0;
 	right: 0;
-	bottom: 68px;
+	bottom: 115px;
 	width: 64px;
 	height: 48px;
 	background: url(../img/next-page.png) no-repeat center;
@@ -128,6 +130,7 @@ content: '';
     height: 295px;
     background: url(../img/home-wellcome-table.png) no-repeat center;
     background-size: contain;
+    z-index: 1;
 }
 .home-wellcome .el__nameplate .el__appstore{
 	position: absolute;
@@ -147,10 +150,15 @@ content: '';
 	background: url(../img/google-play.png) no-repeat center;
     background-size: contain;
 }
+.el__icons{
+	position: relative;
+	z-index: -1;
+	pointer-events: none;
+}
 .el__owl{
     position: absolute;
     bottom: 310px;
-    right: 20px;
+    right: 70px;
     width: 144px;
     height: 104px;
 	background: url(../img/owl.png) no-repeat center;
@@ -159,31 +167,47 @@ content: '';
 .el__peg{
 	position: absolute;
     bottom: 55px;
-    left: 60px;
+    left: 82px;
     width: 133px;
     height: 140px;
 	background: url(../img/peg.png) no-repeat center;
     background-size: contain;
 }
+.el__hero{
+	position: absolute;
+    top: 520px;
+    left: 313px;
+    width: 182px;
+    height: 287px;
+    background: url(../img/hero.png) no-repeat center;
+    background-size: contain;
+}
 .el__fire{
 	position: absolute;
-    bottom: -85px;
+    bottom: -70px;
     left: 310px;
-    width: 380px;
-    height: 650px;
+    width: 310px;
+    height: 530px;
 	background: url(../img/fire.gif) no-repeat center;
     background-size: contain;
 }
-.el__fire.-bottom--left{
-    bottom: 55px;
-    left: 60px;
+.el__fire.-top--left{
+	width: 240px;
+    height: 410px;
+    bottom: 110px;
+    left: 510px;
 }
 .el__fire.-top--right{
-    bottom: 55px;
-    left: 60px;
+    bottom: 110px;
+    left: auto;
+    right: 510px;
+    width: 240px;
+    height: 410px;
 }
 
 .el__fire.-bottom--right{
-    bottom: 55px;
-    left: 60px;
+    right: 465px;
+    width: 315px;
+    left: auto;
+    right: 275px;
 }
