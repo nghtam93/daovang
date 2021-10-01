@@ -4,210 +4,80 @@
 ======================================
 */
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-
 a{text-decoration:none;}
 a:hover{text-decoration:none;}
-body{
-	min-width: 1900px;
-}
+body{min-width:1900px;}
+
 /*
 ======================================
 [ Header ]
 ======================================
 */
-header.header {
-    position: fixed;
-    top: -1px;
-    left: 0;
-    right: 0;
-    z-index: 9;
-}
+header.header{position:fixed;top:-1px;left:0;right:0;z-index:11;}
+header.header .header__wrap{width:1565px;display:flex;justify-content:center;background:url(../img/menu-bg.png) no-repeat center;background-size:contain;margin:auto;padding:15px 0 45px;align-items:start;}
+header.header .logo{margin-bottom:0;padding:0 60px;}
 
-header.header .header__wrap{
-    width: 1565px;
-    display: flex;
-    justify-content: center;
-    background: url(../img/menu-bg.png) no-repeat center;
-    background-size: contain;
-    margin: auto;
-    padding: 15px 0 45px;
-    align-items: start;
-}
-header.header .logo{
-	margin-bottom: 0;
-	    padding: 0 60px;
-}
 /*
 ======================================
 [ Main menu ]
 ======================================
 */
-.main__nav{
-	position:relative;
-	font-family: 'Bungee', cursive;
-	z-index:9;
-
-}
+.main__nav{position:relative;font-family:'Bungee',cursive;z-index:9;}
 .main__nav:after{content:"";display:table;clear:both;}
 .main__nav .sc__wrap{position:relative;z-index:9999;width:100%;}
 .main__nav ul{list-style:none;padding:0;margin:0;}
 .main__nav ul.el__menu{padding:0px 0;}
 .main__nav ul.el__menu:after{content:"";display:table;clear:both;}
-.main__nav ul.el__menu>li{position:relative;display:inline-block;padding: 0 20px;}
-.main__nav ul.el__menu>li>a{position:relative;color: #FFFAE9;line-height: 19px;font-weight: 400;font-size: 16px;
-	padding: 10px 22px;display:block;text-shadow: 2px 2px 0px #1D1A1A;
-border: 1px solid transparent;
-}
-.main__nav ul.el__menu>li:hover>a, .main__nav ul.el__menu>li.active>a{
-background-color: #723715;
-    border-radius: 8px;
-    border: 1px solid #FFCB36;
-    box-shadow: inset 0px 0px 4px #ffc300;
-    transition: all .5s;
-}
-.main__nav ul.el__menu>li>a::before,.main__nav ul.el__menu>li>a::after{
-
-}
-
-
-.main__nav ul.el__menu>li.active>a::before,.main__nav ul.el__menu>li.active>a::after,.main__nav ul.el__menu>li:hover>a::before,.main__nav ul.el__menu>li:hover>a::after {
-content: '';
-	width: 5px;
-	height: 5px;
-	background-color: #FFCB36;
-	position: absolute;
-	top: calc(50% - 2.5px);
-	left: -3px;
-	border-radius: 1px;
-	transform: rotate(45deg);
-}
-.main__nav ul.el__menu>li.active>a::after,.main__nav ul.el__menu>li:hover>a::after {
-	content: '';
-	left: auto;
-	right: -3px;
-}
-
+.main__nav ul.el__menu>li{position:relative;display:inline-block;padding:0 20px;}
+.main__nav ul.el__menu>li>a{position:relative;color:#FFFAE9;line-height:19px;font-weight:400;font-size:16px;padding:10px 22px;display:block;text-shadow:2px 2px 0px #1D1A1A;border:1px solid transparent;}
+.main__nav ul.el__menu>li:hover>a,.main__nav ul.el__menu>li.active>a{background-color:#723715;border-radius:8px;border:1px solid #FFCB36;box-shadow:inset 0px 0px 4px #ffc300;transition:all .5s;}
+.main__nav ul.el__menu>li>a::before,.main__nav ul.el__menu>li>a::after{}
+.main__nav ul.el__menu>li.active>a::before,.main__nav ul.el__menu>li.active>a::after,.main__nav ul.el__menu>li:hover>a::before,.main__nav ul.el__menu>li:hover>a::after{content:'';width:5px;height:5px;background-color:#FFCB36;position:absolute;top:calc(50% - 2.5px);left:-3px;border-radius:1px;transform:rotate(45deg);}
+.main__nav ul.el__menu>li.active>a::after,.main__nav ul.el__menu>li:hover>a::after{content:'';left:auto;right:-3px;}
 
 /*
 ======================================
 [ Home Wellcome ]
 ======================================
 */
-.home-wellcome{
-	position: relative;
-	background: url(../img/home-wellcome-bg.jpg) no-repeat center;
-    background-size: 100% 100%;
-	height: 1145px;
-	overflow: hidden;
-}
-.home-wellcome .el__play{
+.home-wellcome{position:relative;background:url(../img/home-wellcome-bg.jpg) no-repeat center;background-size:100% 100%;height:1144px;overflow:hidden;}
+.home-wellcome:after{
+	content: '';
+	width: 100%;
+	height: 190px;
 	position: absolute;
+	bottom: 0;
 	left: 0;
-	right: 0;
-	bottom: 175px;
-	width: 264px;
-    height: 104px;
-	background: url(../img/playnow.png) no-repeat center;
-    background-size: contain;
-    margin: auto;
+	background: linear-gradient(180deg, rgba(46, 24, 20, 0) 0%, #281514 100%);
 }
-.home-wellcome .el__nextpage{
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 115px;
-	width: 64px;
-	height: 48px;
-	background: url(../img/next-page.png) no-repeat center;
-    background-size: contain;
-    margin: auto;
-}
-.home-wellcome .el__nameplate{
-    position: absolute;
-    right: 139px;
-    bottom: 0;
-    width: 281px;
-    height: 295px;
-    background: url(../img/home-wellcome-table.png) no-repeat center;
-    background-size: contain;
-    z-index: 1;
-}
-.home-wellcome .el__nameplate .el__appstore{
-	position: absolute;
-	    top: 58px;
-    left: 54px;
-	width: 177px;
-	height: 46px;
-	background: url(../img/app-store.png) no-repeat center;
-    background-size: contain;
-}
-.home-wellcome .el__nameplate .el__googleplay{
-	position: absolute;
-	    top: 107px;
-    left: 54px;
-	width: 177px;
-	height: 45px;
-	background: url(../img/google-play.png) no-repeat center;
-    background-size: contain;
-}
-.el__icons{
-	position: relative;
-	z-index: -1;
-	pointer-events: none;
-}
-.el__owl{
-    position: absolute;
-    bottom: 310px;
-    right: 70px;
-    width: 144px;
-    height: 104px;
-	background: url(../img/owl.png) no-repeat center;
-    background-size: contain;
-}
-.el__peg{
-	position: absolute;
-    bottom: 55px;
-    left: 82px;
-    width: 133px;
-    height: 140px;
-	background: url(../img/peg.png) no-repeat center;
-    background-size: contain;
-}
-.el__hero{
-	position: absolute;
-    top: 520px;
-    left: 313px;
-    width: 182px;
-    height: 287px;
-    background: url(../img/hero.png) no-repeat center;
-    background-size: contain;
-}
-.el__fire{
-	position: absolute;
-    bottom: -70px;
-    left: 310px;
-    width: 310px;
-    height: 530px;
-	background: url(../img/fire.gif) no-repeat center;
-    background-size: contain;
-}
-.el__fire.-top--left{
-	width: 240px;
-    height: 410px;
-    bottom: 110px;
-    left: 510px;
-}
-.el__fire.-top--right{
-    bottom: 110px;
-    left: auto;
-    right: 510px;
-    width: 240px;
-    height: 410px;
-}
+.home-wellcome .el__play{position:absolute;left:0;right:0;bottom:175px;width:264px;height:104px;background:url(../img/playnow.png) no-repeat center;background-size:contain;margin:auto;z-index:10;}
+.home-wellcome .el__nextpage{position:absolute;left:0;right:0;bottom:115px;width:64px;height:48px;background:url(../img/next-page.png) no-repeat center;background-size:contain;margin:auto;}
+.home-wellcome .el__nameplate{position:absolute;right:139px;bottom:0;width:281px;height:295px;background:url(../img/home-wellcome-table.png) no-repeat center;background-size:contain;z-index:10;}
+.home-wellcome .el__nameplate .el__appstore{position:absolute;top:58px;left:54px;width:177px;height:46px;background:url(../img/app-store.png) no-repeat center;background-size:contain;}
+.home-wellcome .el__nameplate .el__googleplay{position:absolute;top:107px;left:54px;width:177px;height:45px;background:url(../img/google-play.png) no-repeat center;background-size:contain;}
+.home-wellcome .el__icons{position:relative;z-index:-1;pointer-events:none;}
+.home-wellcome .el__owl{position:absolute;bottom:310px;right:70px;width:144px;height:104px;background:url(../img/owl.png) no-repeat center;background-size:contain;}
+.home-wellcome .el__peg{position:absolute;bottom:55px;left:82px;width:133px;height:140px;background:url(../img/peg.png) no-repeat center;background-size:contain;}
+.home-wellcome .el__hero{position:absolute;top:520px;left:313px;width:182px;height:287px;background:url(../img/hero.png) no-repeat center;background-size:contain;}
+.home-wellcome .el__fire{position:absolute;bottom:-70px;left:310px;width:310px;height:530px;background:url(../img/fire.gif) no-repeat center;background-size:contain;}
+.home-wellcome .el__fire.-top--left{width:240px;height:410px;bottom:110px;left:510px;}
+.home-wellcome .el__fire.-top--right{bottom:110px;left:auto;right:510px;width:240px;height:410px;}
+.home-wellcome .el__fire.-bottom--right{right:465px;width:315px;left:auto;right:275px;}
 
-.el__fire.-bottom--right{
-    right: 465px;
-    width: 315px;
-    left: auto;
-    right: 275px;
+/*
+======================================
+[ Home Story ]
+======================================
+*/
+.home-story{
+	position:relative;background:url(../img/home-story-bg.jpg) no-repeat center;background-size:100% 100%;height:890px;overflow:hidden;
+}
+.home-story .el__paper{
+	position:absolute;
+	top: 50px;
+	right: 350px;
+	width: 283px;
+	height: 365px;
+	background:url(../img/paper.png) no-repeat center;
+	background-size:contain;
 }
