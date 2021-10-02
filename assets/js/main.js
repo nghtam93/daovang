@@ -1,4 +1,7 @@
 $(function() {
+
+	new WOW().init();
+
 	if($('body').hasClass('home')){
 		$('.home-character__slider').slick({
 			slidesToShow: 4,
@@ -17,35 +20,17 @@ $(function() {
 		});
 	}
 
-	// var topMenuHeight = $('header.header').outerHeight()
+	$(".selected").hover(function () {
+	      var hoverImg = HoverImgOf($(this).attr("src"));
+	      $(this).attr("src", hoverImg);
+	}, function () {
+	      var normalImg = NormalImgOf($(this).attr("src"));
+	      $(this).attr("src", normalImg);
+	});
 
-	// if(window.location.hash){
- //        $(document).off("scroll");
- //        var target = window.location.hash,
- //            menu = target;
- //        $target = $(target);
- //        $('html, body').stop().animate({
- //            'scrollTop': $target.offset().top - topMenuHeight
- //        });
- //    }
-
- //    $('.main__nav a[href^="#"]').on('click', function (e) {
- //        e.preventDefault();
- //        $(document).off("scroll");
- //        console.log(topMenuHeight)
- //        $('a').each(function () {
- //            $(this).removeClass('active');
- //        })
- //        $(this).addClass('active');
-
- //        var target = this.hash,
- //            menu = target;
- //        $target = $(target);
- //        $('html, body').stop().animate({
- //            'scrollTop': $target.offset().top - topMenuHeight
- //        });
- //    });
-
-
+	function HoverImgOf(filename) {
+	    var re = new RegExp("(.+)\\.(gif|png|jpg)", "g");
+	    return filename.replace(re, "$1_hover.$2");
+	}
 
 });
