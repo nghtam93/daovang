@@ -176,7 +176,7 @@ transition: all .5s;
 z-index: 10;
 }
 .home-island__map{
-transition: all .5s;
+/*transition: all .5s;*/
 }
 .home-island__map.-st1{position:absolute;top:32%;left:6%;width:14.5%;height:21.7%;background:url(../img/home-island-map-1.png) no-repeat center;background-size:contain;}
 .home-island__map.-st1.active,.home-island__map.-st1:hover{
