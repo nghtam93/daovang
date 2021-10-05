@@ -33,4 +33,13 @@ $(function() {
 	    return filename.replace(re, "$1_hover.$2");
 	}
 
+
+    $(window).scroll(function (){
+        const scroll = $(window).scrollTop();
+        $('.home-wellcome--door').css({
+            transform: 'translate3d(0, '+(scroll/10) +'%,0) scale('+(100 + scroll/5)/100+')'
+        })
+    });
+
+
 });
