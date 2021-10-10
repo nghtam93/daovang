@@ -132,7 +132,7 @@ z-index: 10;
 [ Home Journey ]
 ======================================
 */
-.home-island{position:relative;background:url(../img/home-island-bg.png) no-repeat center;background-size:100% 100%;padding:8% 0 8%;margin-top:-60px;}
+.home-island{position:relative;background:url(../img/home-island-bg.png) no-repeat center;background-size:cover;padding:8% 0 8%;margin-top:-60px;}
 .home-island .sc__header{margin-bottom:45px;}
 .home-island--treasure{position:absolute;top:-22%;left:-5.5%;width:33.5%;height:55%;background:url(../img/home-island-treasure.png) no-repeat center;background-size:contain;pointer-events:none;}
 .home-island__box{position:relative;width:100%;padding-top:58%;background:url(../img/home-island-map.png) no-repeat center;background-size:contain;z-index:10;}
@@ -178,7 +178,13 @@ z-index: 10;
 [ Home Discover ]
 ======================================
 */
-.home-discover{position:relative;background-color:#1E100F;padding:50px 0 100px;}
+.home-discover{position:relative;background-color:#1E100F;padding:50px 0 100px;
+background: url(../../images/home-discover-bg.jpg) no-repeat center;
+  background-size: cover;
+}
+.home-discover:before{content: '';position: absolute;top: -60%;right: 0;width: 19%;height: 143%;background: url(../../images/home-discover-stone.png) no-repeat center;background-size: contain;}
+
+
 .home-discover--paper{width:100%;padding:60px 60px 70px;background:url(../img/home-discover-paper.png) no-repeat center;background-size:100% 100%;text-align:center;z-index:10;}
 .home-discover--title{font-family:'Bungee',cursive;font-size:32px;line-height:42px;color:#FFDC4D;text-shadow:-2px 0 0px #1d1a1a,0 2px 0px #1d1a1a,2px 0 0px #1d1a1a,0 -2px 0px #1d1a1a;margin-bottom:15px;}
 .home-discover--excerpt{font-weight:bold;font-size:18px;line-height:32px;color:#1E100F;margin-bottom:30px;}
@@ -329,7 +335,7 @@ color: #F5F5F5;
 }
 
 
-.home-character{position:relative;overflow:hidden;padding:100px 0 50px;background-image:url(../img/home-character-bg.png);background-size:100% 100%;background-position:center;background-repeat:no-repeat;}
+.home-character{position:relative;overflow:hidden;padding:100px 0 50px;background-image:url(../img/home-character-bg.png);background-size:cover;background-position:center;background-repeat:no-repeat;}
 .home-character .sc__header{margin-bottom:70px;}
 .home-character__slider{z-index:10;}
 .home-character .dnfix__thumb{padding-top: 123%;}

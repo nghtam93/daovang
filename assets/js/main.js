@@ -20,18 +20,18 @@ $(function() {
 		});
 	}
 
-	$(".selected").hover(function () {
-	      var hoverImg = HoverImgOf($(this).attr("src"));
-	      $(this).attr("src", hoverImg);
-	}, function () {
-	      var normalImg = NormalImgOf($(this).attr("src"));
-	      $(this).attr("src", normalImg);
-	});
+	// $(".selected").hover(function () {
+	//       var hoverImg = HoverImgOf($(this).attr("src"));
+	//       $(this).attr("src", hoverImg);
+	// }, function () {
+	//       var normalImg = NormalImgOf($(this).attr("src"));
+	//       $(this).attr("src", normalImg);
+	// });
 
-	function HoverImgOf(filename) {
-	    var re = new RegExp("(.+)\\.(gif|png|jpg)", "g");
-	    return filename.replace(re, "$1_hover.$2");
-	}
+	// function HoverImgOf(filename) {
+	//     var re = new RegExp("(.+)\\.(gif|png|jpg)", "g");
+	//     return filename.replace(re, "$1_hover.$2");
+	// }
 
 
     $(window).scroll(function (){
