@@ -5,7 +5,7 @@ $(function() {
 	if($('body').hasClass('home')){
 		$('.home-character__slider').slick({
 			slidesToShow: 4,
-			slidesToScroll: 1,
+			slidesToScroll: 4,
 			infinite: true,
 			dots: true,
 			easing: "linear"

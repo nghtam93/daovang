@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Treasure</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css"/>
+
+    <link rel="icon" href="assets/img/favicon.png" />
+  </head>
+  <body class="maps">
+
+    <div class="containerz">
+      <canvas id="pixie"></canvas>
+    </div>
+
+    <header class="header">
+        <div class="header__wrap">
+          <nav class="main__nav text-end">
+            <ul class="el__menu">
+              <li class="menu-item active"><a href="#">Home</a></li>
+              <li class="menu-item"><a href="#home-about">About</a></li>
+            </ul>
+          </nav>
+          <h1 class="logo">
+            <a href="index.html">
+              <img width="217" height="63" src="assets/img/logo.png" alt="Logo">
+            </a>
+          </h1>
+          <nav class="main__nav text-start">
+            <ul class="el__menu">
+              <li class="menu-item"><a href="maps.html">MAPS</a></li>
+              <li class="menu-item"><a href="#home-marketplace">MARKETPLACE</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <section class="maps-header" style="background-image:url(images/pages/maps-header.png);">
+      <div class="container">
+        <ul class="nav nav-tabs el__tabs" id="mapTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="mapTab1-tab" data-bs-toggle="tab" data-bs-target="#mapTab1" type="button" role="tab" aria-controls="mapTab1" aria-selected="true"><span>MAYA</span></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mapTab2-tab" data-bs-toggle="tab" data-bs-target="#mapTab2" type="button" role="tab" aria-controls="mapTab2" aria-selected="false"><span>INDUS</span></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mapTab3-tab" data-bs-toggle="tab" data-bs-target="#mapTab3" type="button" role="tab" aria-controls="mapTab3" aria-selected="false"><span>VIKING</span></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mapTab4-tab" data-bs-toggle="tab" data-bs-target="#mapTab4" type="button" role="tab" aria-controls="mapTab4" aria-selected="false"><span>ANASAZI</span></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mapTab5-tab" data-bs-toggle="tab" data-bs-target="#mapTab5" type="button" role="tab" aria-controls="mapTab5" aria-selected="false"><span>AI CẬP</span></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mapTab6-tab" data-bs-toggle="tab" data-bs-target="#mapTab6" type="button" role="tab" aria-controls="mapTab6" aria-selected="false"><span>HY LẠP</span></button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mapTab7-tab" data-bs-toggle="tab" data-bs-target="#mapTab7" type="button" role="tab" aria-controls="mapTab7" aria-selected="false"><span>ATLANTIS</span></button>
+          </li>
+        </ul>
+
+        <a href="#home-about" class="home-wellcome--nextpage"></a>
+
+        <div class="el__item--meta text-center">
+          <h2 class="el__item--title">KHO TÀNG TRÍ TUỆ BÍ ẨN</h2>
+          <div class="el__item--sub">Văn minh Maya - Kho tàng trí tuệ bí ẩn</div>
+        </div>
+      </div>
+
+      <div class="home-wellcome--nameplate fadeInRight">
+        <a href="#" class="home-wellcome--appstore"></a>
+        <a href="#" class="home-wellcome--googleplay"></a>
+      </div>
+
+    </section>
+
+    <section class="maps-content">
+      <div class="container">
+        <div class="tab-content" id="mapTabContent">
+          <div class="tab-pane fade show active" id="mapTab1" role="tabpanel" aria-labelledby="mapTab1-tab">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="el__item--content">
+                  <div class="el__item--title">HÀNH TRÌNH ĐẾN MAYA</div>
+                  <div class="el__item--excerpt">
+                    Vincent từ quê nhà chuẩn bị cho chuyến hành trình của mình Trong lúc đang chuẩn bị đồ đạc cho chuyến thám hiểm cthì vô tình anh ta tìm thấy chiếc rương cũ bám đầy bụi nằm trong nhà kho. Trong chiếc rương đó chứa 1 chiếc la bàn cũ, 1 dây chuyền có đính viên đá và 1 mảnh giấy…. Oh ra đây là 1 bản đồ cổ của Anasazi từ vài thiên niên kỉ trước – Vincent nói. Vincent quyết định một mình tới khu vực đang được các nhà khảo cổ học khai quật - khe núi Chaco...
+                  </div>
+                  <div class="text-start">
+                    <a href="" class="btn--playnow"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="el__item--thumb">
+                  <img src="images/pages/maps-img-demo.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="mapTab2" role="tabpanel" aria-labelledby="mapTab2-tab">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="el__item--content">
+                  <div class="el__item--title">BÍ ẨN CỦA INDUS</div>
+                  <div class="el__item--excerpt">
+                    Vincent từ quê nhà chuẩn bị cho chuyến hành trình của mình Trong lúc đang chuẩn bị đồ đạc cho chuyến thám hiểm cthì vô tình anh ta tìm thấy chiếc rương cũ bám đầy bụi nằm trong nhà kho. Trong chiếc rương đó chứa 1 chiếc la bàn cũ, 1 dây chuyền có đính viên đá và 1 mảnh giấy…. Oh ra đây là 1 bản đồ cổ của Anasazi từ vài thiên niên kỉ trước – Vincent nói. Vincent quyết định một mình tới khu vực đang được các nhà khảo cổ học khai quật - khe núi Chaco...
+                  </div>
+                  <div class="text-start">
+                    <a href="" class="btn--playnow"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="el__item--thumb">
+                  <img src="images/pages/maps-img-demo.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="mapTab3" role="tabpanel" aria-labelledby="mapTab3-tab">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="el__item--content">
+                  <div class="el__item--title">Một thời đại Viking huy hoàng</div>
+                  <div class="el__item--excerpt">
+                    Vincent từ quê nhà chuẩn bị cho chuyến hành trình của mình Trong lúc đang chuẩn bị đồ đạc cho chuyến thám hiểm cthì vô tình anh ta tìm thấy chiếc rương cũ bám đầy bụi nằm trong nhà kho. Trong chiếc rương đó chứa 1 chiếc la bàn cũ, 1 dây chuyền có đính viên đá và 1 mảnh giấy…. Oh ra đây là 1 bản đồ cổ của Anasazi từ vài thiên niên kỉ trước – Vincent nói. Vincent quyết định một mình tới khu vực đang được các nhà khảo cổ học khai quật - khe núi Chaco...
+                  </div>
+                  <div class="text-start">
+                    <a href="" class="btn--playnow"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="el__item--thumb">
+                  <img src="images/pages/maps-img-demo.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="mapTab4" role="tabpanel" aria-labelledby="mapTab4-tab">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="el__item--content">
+                  <div class="el__item--title">Những điều huyền bí bất tận</div>
+                  <div class="el__item--excerpt">
+                    Vincent từ quê nhà chuẩn bị cho chuyến hành trình của mình Trong lúc đang chuẩn bị đồ đạc cho chuyến thám hiểm cthì vô tình anh ta tìm thấy chiếc rương cũ bám đầy bụi nằm trong nhà kho. Trong chiếc rương đó chứa 1 chiếc la bàn cũ, 1 dây chuyền có đính viên đá và 1 mảnh giấy…. Oh ra đây là 1 bản đồ cổ của Anasazi từ vài thiên niên kỉ trước – Vincent nói. Vincent quyết định một mình tới khu vực đang được các nhà khảo cổ học khai quật - khe núi Chaco...
+                  </div>
+                  <div class="text-start">
+                    <a href="" class="btn--playnow"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="el__item--thumb">
+                  <img src="images/pages/maps-img-demo.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="mapTab5" role="tabpanel" aria-labelledby="mapTab5-tab">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="el__item--content">
+                  <div class="el__item--title">Cái nôi văn minh nhân loại</div>
+                  <div class="el__item--excerpt">
+                    Vincent từ quê nhà chuẩn bị cho chuyến hành trình của mình Trong lúc đang chuẩn bị đồ đạc cho chuyến thám hiểm cthì vô tình anh ta tìm thấy chiếc rương cũ bám đầy bụi nằm trong nhà kho. Trong chiếc rương đó chứa 1 chiếc la bàn cũ, 1 dây chuyền có đính viên đá và 1 mảnh giấy…. Oh ra đây là 1 bản đồ cổ của Anasazi từ vài thiên niên kỉ trước – Vincent nói. Vincent quyết định một mình tới khu vực đang được các nhà khảo cổ học khai quật - khe núi Chaco...
+                  </div>
+                  <div class="text-start">
+                    <a href="" class="btn--playnow"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="el__item--thumb">
+                  <img src="images/pages/maps-img-demo.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="mapTab6" role="tabpanel" aria-labelledby="mapTab6-tab">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="el__item--content">
+                  <div class="el__item--title">Tìm Lại Nền Văn Minh Hy Lạp Cổ Đại</div>
+                  <div class="el__item--excerpt">
+                    Vincent từ quê nhà chuẩn bị cho chuyến hành trình của mình Trong lúc đang chuẩn bị đồ đạc cho chuyến thám hiểm cthì vô tình anh ta tìm thấy chiếc rương cũ bám đầy bụi nằm trong nhà kho. Trong chiếc rương đó chứa 1 chiếc la bàn cũ, 1 dây chuyền có đính viên đá và 1 mảnh giấy…. Oh ra đây là 1 bản đồ cổ của Anasazi từ vài thiên niên kỉ trước – Vincent nói. Vincent quyết định một mình tới khu vực đang được các nhà khảo cổ học khai quật - khe núi Chaco...
+                  </div>
+                  <div class="text-start">
+                    <a href="" class="btn--playnow"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="el__item--thumb">
+                  <img src="images/pages/maps-img-demo.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tab-pane fade" id="mapTab7" role="tabpanel" aria-labelledby="mapTab7-tab">
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="el__item--content">
+                  <div class="el__item--title">Chặng đường đi tìm nền văn minh đã mất</div>
+                  <div class="el__item--excerpt">
+                    Vincent từ quê nhà chuẩn bị cho chuyến hành trình của mình Trong lúc đang chuẩn bị đồ đạc cho chuyến thám hiểm cthì vô tình anh ta tìm thấy chiếc rương cũ bám đầy bụi nằm trong nhà kho. Trong chiếc rương đó chứa 1 chiếc la bàn cũ, 1 dây chuyền có đính viên đá và 1 mảnh giấy…. Oh ra đây là 1 bản đồ cổ của Anasazi từ vài thiên niên kỉ trước – Vincent nói. Vincent quyết định một mình tới khu vực đang được các nhà khảo cổ học khai quật - khe núi Chaco...
+                  </div>
+                  <div class="text-start">
+                    <a href="" class="btn--playnow"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="el__item--thumb">
+                  <img src="images/pages/maps-img-demo.png" class="img-fluid" alt="">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer wow fadeInUp">
+      <div class="container text-center">
+          <div class="footer--logo">
+            <a href="index.html">
+              <img src="assets/img/footer-logo.png" alt="">
+            </a>
+          </div>
+          <div class="footer__socical">
+            <p>JOIN OUR COMMUNITY</p>
+            <ul>
+              <li>
+                <a href="" class="footer__socical--twitter" target="_blank"></a>
+              </li>
+              <li>
+                <a href="" class="footer__socical--telegram" target="_blank"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="assets/js/firefly.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
