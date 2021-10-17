@@ -20,11 +20,18 @@ $(function() {
 		});
 	}
 	if($('body').hasClass('maps')){
-		$('#mapTab').on("click",function(e) {
+		$('#mapTab .nav-link').on("click",function(e) {
 			var offset_top = $('.maps-content').offset().top;
-			console.log(offset_top)
+
 			$("html, body").animate({scrollTop:offset_top},500)
+
+			var bg = $(this).data('bg');
+			$('.maps-header').css('background-image','url('+bg+')')
+
 		})
+
+
+
 	}
 
 });

@@ -61,7 +61,7 @@ header.header .logo{margin-bottom:0;padding:0 60px;width:340px;}
 .main__nav ul.el__menu>li.active>a::after,.main__nav ul.el__menu>li:hover>a::after{content:'';left:auto;right:-3px;}
 
 /**/
-.containerz{overflow:hidden;ointer-events:none;position:absolute;top:0;left:0;height:100%;width:100%;filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429',EndColorStr='#257eb7');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429',EndColorStr='#257eb7')";}
+.containerz{overflow:hidden;pointer-events:none;position:absolute;top:0;left:0;height:100%;width:100%;filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429',EndColorStr='#257eb7');-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#040429',EndColorStr='#257eb7')";}
 #pixie{z-index:10;position:fixed;top:0;left:0;pointer-events:none;}
 
 /*
@@ -363,12 +363,17 @@ footer.footer{position:relative;background:url(../img/footer-bg.png) no-repeat c
 [ Page Maps ]
 ======================================
 */
-.maps-header{position:relative;padding:135px 0 228px;background-size:cover;background-position:center;background-repeat:no-repeat;}
+.maps-header{position:relative;padding:135px 0 228px;background-size:cover;background-position:center;background-repeat:no-repeat;
+transition: all .5s;
+}
 .maps-header .home-wellcome--nameplate{position:absolute;bottom:0;width:16.2%;height:42.7%;right:7.2%;background:url(../img/home-wellcome-table.png) no-repeat center;background-size:contain;z-index:10;}
 .maps-header .el__tabs{border:0;justify-content:center;margin-bottom:190px;}
 .maps-header .nav-tabs .nav-link{position:relative;border:0;font-family:Bungee;color:#E6DCD2;text-shadow:1px 1px 2px #4e4e4e,1px 1px 2px #4e4e4e,1px 1px 2px #4e4e4e,1px 1px 2px #4e4e4e,1px 1px 2px #4e4e4e;min-width:150px;padding:16px 10px;margin:0 8px;background-color:transparent;}
 .maps-header .nav-tabs .nav-link span{position:relative;}
 .maps-header .nav-tabs .nav-link::before{content:'';background-image:url(../img/pages/maps-nav-btn.png);background-repeat:no-repeat;background-size:100% 100%;position:absolute;top:0;left:0;width:100%;height:100%;transition:all .3s;}
+.maps-header .nav-tabs .nav-link.active{
+  color: #fff;
+}
 .maps-header .nav-tabs .nav-item.show .nav-link::before,.maps-header .nav-tabs .nav-link.active::before{background-image:url(../img/pages/maps-nav-btn-hover.png);top:-16px;left:-20px;width:190px;height:95px;}
 .maps-header .el__item--title{font-family:Bungee;font-size:48px;line-height:58px;color:#FFDC4D;text-shadow:1px 1px 2px #1D1A1A,1px 1px 2px #1D1A1A,1px 1px 2px #1D1A1A,1px 1px 2px #1D1A1A,1px 1px 2px #1D1A1A;margin-bottom:15px;}
 .maps-header .el__item--sub{font-family:Bungee;font-size:24px;line-height:29px;color:#FFFAE9;text-shadow:1px 1px 2px #1D1A1A,1px 1px 2px #1D1A1A,1px 1px 2px #1D1A1A,1px 1px 2px #1D1A1A,1px 1px 2px #1D1A1A;}
