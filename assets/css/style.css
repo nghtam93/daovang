@@ -300,7 +300,7 @@ header.header .logo{margin-bottom:0;padding:0 60px;width:340px;}
 [ Home Collection ]
 ======================================
 */
-.home-collection{padding:50px 0 0;margin-bottom:-100px;}
+.home-collection{padding:50px 0 0;margin-bottom:-100px;z-index: 10;position: relative;}
 .home-collection__box{position:relative;padding:0 80px;background:url(../img/home-collection-box.png) no-repeat center;background-size:100% 100%;z-index:10;}
 .home-collection__box:before{content:'';background:url(../img/home-collection-owl.png) no-repeat center;background-size:100% 100%;position:absolute;top:-30px;right:75px;width:112px;height:95px;}
 .home-collection .col--left{padding:60px 70px;background:url(../img/home-collection-shadow.png) no-repeat center;background-size:100% 100%;}
@@ -320,7 +320,7 @@ header.header .logo{margin-bottom:0;padding:0 60px;width:340px;}
 [ Home Footer ]
 ======================================
 */
-footer.footer{position:relative;background:url(../img/footer-bg.png) no-repeat center;background-position:bottom;padding:189px 0 20px;z-index:10;}
+footer.footer{position:relative;background:url(../img/footer-bg.png) no-repeat center;background-position:bottom;padding:189px 0 20px;z-index: 9;}
 .footer--logo{margin-bottom:10px;}
 .footer__socical{font-family:'Poppins',sans-serif;font-weight:500;font-size:16px;line-height:32px;color:#F2F2F2;}
 .footer__socical ul{display:flex;justify-content:center;}
