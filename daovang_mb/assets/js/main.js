@@ -2,6 +2,22 @@ $(function() {
 
 	new WOW().init();
 
+	// Page Scroll
+    $(document).ready(function () {
+        //smoothscroll
+        $('.js-click-smooth').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+
+            var target = this.hash,
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            },500);
+        });
+    });
+
+
 	$('.menu__mobile').click(function(e){
 	    if($('.nav__mobile').hasClass('active')){
 	      $('.nav__mobile').removeClass('active')
