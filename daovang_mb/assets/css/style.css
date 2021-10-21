@@ -406,6 +406,32 @@ flex-wrap: nowrap;
 .maps-content .el__item--thumb{
   text-align: center;
 }
+
+/*Modal pager*/
+.modalpaper .modal-body{display:flex;align-items:center;padding:0;}
+.modalpaper .modal-content{padding:130px 125px 140px;background:url(../img/popup-bg2.png) no-repeat center;background-size:100% 100%;}
+.modalpaper .btn-close{width:68px;height:68px;background:url(../img/popup_close.png) no-repeat center;background-size:contain;z-index:1;position:absolute;opacity:1;bottom:-30px;margin:auto;left:0;right:0;}
+.modalpaper .popup__title{font-family:Bungee;font-size:32px;line-height:42px;text-align:center;color:#FFDC4D;text-shadow:-2px 0 0px #1d1a1a,0 2px 0px #1d1a1a,2px 0 0px #1d1a1a,0 -2px 0px #1d1a1a;margin-bottom:10px;}
+.modalpaper .popup__excerpt{font-family:Nunito;font-weight:bold;font-size:18px;line-height:34px;
+  text-align:center;color:#1E100F;margin-bottom:0;
+}
+@media (max-width:1599px){
+  .modalpaper .modal-content{padding:100px 50px 100px;}
+  .modalpaper .popup__excerpt{font-size:14px;line-height:26px;margin-bottom:0;}
+  .modalpaper .popup__title{font-size:18px;line-height:26px;}
+  .modalpaper .btn-close{width:45px;height:45px;}
+}
+@media (max-width:767px){
+  .modalpaper .modal-dialog{max-width:100%;}
+  .modalpaper .popup__title{font-size:14px;margin-bottom:0;}
+  .modalpaper .popup__excerpt{font-size:10px;line-height: 24px;}
+}
+@media (min-width:768px){
+  .modalpaper .modal-dialog{max-width:550px;}
+}
+@media (min-width:1600px){
+  .modalpaper .modal-dialog{max-width:880px;}
+}
 /*
 ======================================
 [ Responsive ]

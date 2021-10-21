@@ -41,6 +41,7 @@
           </nav>
         </div>
     </header>
+
     <section class="home-wellcome">
       <div class="home-wellcome--zzz">
         <div class="home-wellcome--hero wow fadeInLeft"></div>
@@ -68,11 +69,11 @@
       <div class="videoWrapper">
         <video src="images/home-about-pc.mp4" loop muted autoplay></video>
       </div>
-      <div class="home-story--paper wow fadeInRight"></div>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#homeaboutModal" class="home-story--paper wow fadeInRight"></a>
     </section>
 
     <section class="home-journey">
-      <div class="home-journey--paper wow fadeInUp"></div>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#homejourneyModal" class="home-journey--paper wow fadeInUp"></a>
     </section>
 
     <section id="home-map" class="home-island">
@@ -337,7 +338,58 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+  <!--   <div class="modal fade" id="homeaboutModal" tabindex="-1" aria-labelledby="homeaboutModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="popup__thumb text-center">
+              <img src="assets/img/ruong.png" width="204" height="214" alt="">
+            </div>
+            <div class="popup__title">BẠN NHẬN ĐƯỢC RƯƠNG KHO BÁU</div>
+            <div class="popup__excerpt">Nhận rương và tiếp tục hoàn thành nhiệm vụ tiếp theo</div>
 
+            <a href="#" class="popup__btn"></a>
+
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Modal -->
+    <div class="modal modalpaper fade" id="homeaboutModal" tabindex="-1" aria-labelledby="homeaboutModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="-wrap">
+              <div class="popup__title">CÂU CHUYỆN CỦA VINCENT</div>
+              <div class="popup__excerpt">
+                Vincent từ quê nhà chuẩn bị cho chuyến hành trình của mình Trong lúc đang chuẩn bị đồ đạc cho chuyến thám hiểm cthì vô tình anh ta tìm thấy chiếc rương cũ bám đầy bụi nằm trong nhà kho. Trong chiếc rương đó chứa 1 chiếc la bàn cũ, 1 dây chuyền có đính viên đá và 1 mảnh giấy…. Oh ra đây là 1 bản đồ cổ của Anasazi từ vài thiên niên kỉ trước – Vincent nói. Vincent quyết định một mình tới khu vực đang được các nhà khảo cổ học khai quật - khe núi Chaco. Ở đó viên đá mà anh từng tìm thấy trong nhà kho lại phát ra 1 nguồn sóng năng lượng tương tác với mức sóng phát ra trong khe núi vô tình làm bẻ cong không gian và thời gian đưa Vincent về thời đại Anasazi và câu chuyện về chuyển hành trình của anh được bắt đầu.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal modalpaper fade" id="homejourneyModal" tabindex="-1" aria-labelledby="homejourneyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-body">
+            <div class="wrap">
+              <div class="popup__title">HÀNH TRÌNH KHÁM PHÁ</div>
+              <div class="popup__excerpt">
+                "Treasure Hunter là trò chơi của những người đi tìm kho báu, mọi người phải chiến đấuphải dấn thân vào những cuộc hành trình cam go để tìm được câu trả lời cho chính mình. Hãy chuẩn bị cho mình những hành trang tối cần thiết để có thể bắt đầu cuộc hành trình một cách lâu dài Treasure Hunter là game sử dụng công nghệ tiên tiến được gọi là Blockchain và những phần thưởng trong game tương đương với crypto dường như là vô hạng"
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
