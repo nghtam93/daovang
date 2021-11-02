@@ -398,6 +398,38 @@ footer.footer{position:relative;background:url(../img/footer-bg.png) no-repeat c
   .home-discover .el__item{padding:0 0;}
   .home-story .videoWrapper{padding-bottom:47.25%;}
   .maps-header .home-wellcome--nameplate{height:29.7%;}
+
+  .maps-header .container{max-width: 100%;}
+}
+@media (max-width:1299px){
+
+.maps-header .el__tabs::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+.maps-header .el__tabs::-webkit-scrollbar
+{
+  width: 4px;
+  height: 6px;
+  background-color: #F5F5F5;
+}
+
+.maps-header .el__tabs::-webkit-scrollbar-thumb
+{
+  background-color: #894200;
+}
+.maps-header .nav-tabs .nav-link{
+  min-width: 130px;
+}
+.maps-header .nav-tabs .nav-item.show .nav-link::before, .maps-header .nav-tabs .nav-link.active::before {
+    top: -16px;
+    left: -20px;
+    width: 168px;
+    height: 95px;
+}
+
 }
 @media (max-width:1199px){
   .main__nav ul.el__menu>li{padding:0 10px;}
@@ -405,7 +437,10 @@ footer.footer{position:relative;background:url(../img/footer-bg.png) no-repeat c
   .home-island .home-island__map.-st1:hover .el__tooltip,.home-island .home-island__map.-st1 .el__tooltip{top:calc(-150% + 30px);}
   .home-wellcome--appstore{top:21.7%;}
   .maps-header .home-wellcome--nameplate{height:27.7%;}
-  .maps-header .el__tabs{height:90px;overflow-x:auto;flex-wrap:nowrap;justify-content:start;padding:10px 15px;}
+
+}
+@media (max-width:1130px){
+.maps-header .el__tabs{height:105px;overflow-x:auto;flex-wrap:nowrap;justify-content:start;padding:10px 15px;}
 }
 @media (max-width:1099px){
   .home-wellcome--appstore{top:23.7%;}
