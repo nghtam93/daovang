@@ -384,7 +384,7 @@ footer.footer{position:relative;background:url(../img/footer-bg.png) no-repeat c
 
 /*Modal pager*/
 .modalpaper .modal-body{display:flex;align-items:center;padding:0;}
-.modalpaper .modal-content{padding:130px 125px 140px;background:url(../img/popup-bg2.png) no-repeat center;background-size:100% 100%;}
+.modalpaper .modal-content{padding:130px 125px 140px;background:url(../img/popup-bg2.png) no-repeat center;background-size:100% 100%;border: 0;}
 .modalpaper .btn-close{width:68px;height:68px;background:url(../img/popup_close.png) no-repeat center;background-size:contain;z-index:1;position:absolute;opacity:1;bottom:-30px;margin:auto;left:0;right:0;}
 .modalpaper .popup__title{font-family:Bungee;font-size:32px;line-height:42px;text-align:center;color:#FFDC4D;text-shadow:-2px 0 0px #1d1a1a,0 2px 0px #1d1a1a,2px 0 0px #1d1a1a,0 -2px 0px #1d1a1a;margin-bottom:10px;}
 .modalpaper .popup__excerpt{font-family:Nunito;font-weight:bold;font-size:18px;line-height:34px;text-align:center;color:#1E100F;margin-bottom:0;}

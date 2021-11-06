@@ -121,7 +121,7 @@ header.header .logo{margin-bottom:0;padding:0 60px;width:340px;}
 [ Home Journey ]
 ======================================
 */
-.home-island{position:relative;background:url(../img/home-island-bg.png) no-repeat center;background-size:cover;padding:8% 0 8%;margin-top:-60px;overflow:hidden;}
+.home-island{position:relative;background:url(../img/home-island-bg.png) no-repeat center;background-size:cover;padding:8% 0 8%;margin-top:-60px;}
 .home-island .sc__header{margin-bottom:45px;}
 .home-island--treasure{position:absolute;top:-22%;left:-5.5%;width:33.5%;height:55%;background:url(../img/home-island-treasure.png) no-repeat center;background-size:contain;pointer-events:none;}
 .home-island__box{position:relative;width:100%;padding-top:58%;background:url(../img/home-island-map.png) no-repeat center;background-size:contain;z-index:10;}
@@ -484,12 +484,15 @@ footer.footer{position:relative;background:url(../img/footer-bg.png) no-repeat c
 
 /*Modal pager*/
 .modalpaper .modal-body{display:flex;align-items:center;padding:0;}
-.modalpaper .modal-content{min-height:720px;padding:130px 125px 140px;background:url(../img/popup-bg2.png) no-repeat center;background-size:100% 100%;}
+.modalpaper .modal-content{min-height:720px;padding:130px 125px 140px;
+  background:url(../img/popup-bg2.png) no-repeat center;background-size:100% 100%;
+    border: 0;
+}
 .modalpaper .btn-close{width:68px;height:68px;background:url(../img/popup_close.png) no-repeat center;background-size:contain;z-index:1;position:absolute;opacity:1;bottom:-30px;margin:auto;left:0;right:0;}
 .modalpaper .popup__title{font-family:Bungee;font-size:32px;line-height:42px;text-align:center;color:#FFDC4D;text-shadow:-2px 0 0px #1d1a1a,0 2px 0px #1d1a1a,2px 0 0px #1d1a1a,0 -2px 0px #1d1a1a;margin-bottom:10px;}
 .modalpaper .popup__excerpt{font-family:Nunito;font-weight:bold;font-size:18px;line-height:34px;text-align:center;color:#1E100F;margin-bottom:0;}
 @media (max-width:1599px){
-  .modalpaper .modal-content{padding:160px 0 110px;}
+  .modalpaper .modal-content{padding:100px 80px 80px;min-height: auto;}
   .modalpaper .popup__excerpt{font-size:14px;line-height:26px;margin-bottom:30px;}
   .modalpaper .popup__title{font-size:18px;line-height:26px;}
   .modalpaper .btn-close{width:45px;height:45px;}
