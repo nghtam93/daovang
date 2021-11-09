@@ -318,7 +318,9 @@ header.header .logo{margin-bottom:0;padding:0 60px;width:340px;}
 /**/
 .home-smithy{position:relative;padding:190px 0 0px;}
 .home-smithy:before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:url(../img/pages/home-smithy-bg.png) no-repeat;background-size:cover;opacity:0.4;pointer-events:none;z-index:-1;}
-
+.home-smithy .el__thumb{
+  text-align: center;
+}
 /**/
 .support-online{position:fixed;bottom:7%;right:6%;z-index: 10;
 transition: all .5s;
