@@ -100,9 +100,18 @@ $(function() {
 			$('.maps-header').css('background-image','url('+bg+')')
 
 		})
+	}
 
-
-
+	if($('body').hasClass('about')){
+		$('.home-partners-slider').slick({
+			rows: 2,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			infinite: true,
+			arrows: true,
+			dots: false,
+			easing: "linear"
+		});
 	}
 
 });
