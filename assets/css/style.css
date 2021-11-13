@@ -149,7 +149,7 @@ header.header .logo{margin-bottom:0;padding:0 60px;width:340px;}
 .home-island .el__tooltip--name{font-family:Bungee;font-size:20px;line-height:24px;text-align:center;color:#FFDC4D;text-shadow:-2px 0 0px #1d1a1a,0 2px 0px #1d1a1a,2px 0 0px #1d1a1a,0 -2px 0px #1d1a1a;margin-bottom:5px;}
 .home-island .el__tooltip--excerpt{font-family:Nunito;font-weight:600;font-size:16px;line-height:22px;}
 .home-island .el__tooltip--btn{position:relative;z-index:1;display:inline-block;width:177px;height:66px;background-image:url(../img/button-sm.png);margin:0 0 -10px;transition:all .5s;font-family:Bungee;font-weight:normal;font-size:12px;line-height:60px;text-align:center;color:#432422;text-transform:uppercase;text-shadow:0px 4px 4px rgba(0,0,0,0.25);/*  -webkit-text-stroke: 1px #1D1A1A;
-      -webkit-text-fill-color: white;*/}
+        -webkit-text-fill-color: white;*/}
   .home-island .el__tooltip--btn:hover{transform:translateY(-2px);}
 
   /*
@@ -477,13 +477,13 @@ header.header .logo{margin-bottom:0;padding:0 60px;width:340px;}
   .popup__thumb{margin-bottom:80px;}
   .popup__thumb img{width:auto;max-height:100px;}
   .popup__excerpt{font-family:Nunito;font-weight:bold;font-size:18px;line-height:34px;text-align:center;color:#1E100F;margin-bottom:70px;}
-  .popup__btn{position:relative;display:block;width:285px;height:124px;margin:0 auto;background:url(../img/btn-nhanngay.png) no-repeat center;background-size:contain;transition:all .5s;}
+  .popup__btn{position:relative;display:block;width:285px;height:124px;margin:0 auto;background:url(../img/button.png) no-repeat center;background-size:contain;transition:all .5s;font-family:Poppins;font-weight:bold;font-size:26px;color:#321615;line-height:124px;letter-spacing:-2px;text-align:center;text-shadow:0px 4px 4px rgb(0 0 0 / 25%);text-transform:uppercase;-webkit-text-stroke:1px #E16E25;-webkit-text-fill-color:#321615;}
   .popup__btn:hover{transform:translateY(-2px);}
   @media (max-width:1599px){
     .modal-content{padding:160px 0 110px;}
     .popup__excerpt{font-size:14px;line-height:26px;margin-bottom:30px;}
     .popup__title{font-size:18px;line-height:26px;}
-    .popup__btn{width:200px;height:90px;}
+    .popup__btn{width:200px;height:90px;line-height:90px;font-size:22px;}
     .btn-close{width:45px;height:45px;}
   }
   @media (max-width:767px){
