@@ -5,6 +5,7 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 a{text-decoration:none;}
 a:hover{text-decoration:none;}
 ul{list-style:none;padding:0;margin-bottom:0}
@@ -25,7 +26,29 @@ img{max-width:100%;height:auto;}
 .sc__header--excerpt{font-weight:600;font-size:14px;line-height:28px;color:#FFFFFF;}
 
 /**/
-.btn--playnow{display:inline-block;width:218px;height:106px;margin:0 -25px;background:url(../img/home-discover--playnow-mb.png) no-repeat center;background-size:contain;z-index:10;transition:all .5s;}
+.btn--playnow{
+      display: inline-block;
+    width: 220px;
+    height: 80px;
+    margin: 0 -25px;
+    background: url(../img/button-sm.png) no-repeat center;
+    background-size: contain;
+    z-index: 10;
+    transition: all .5s;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 18px;
+    color: #321615;
+    line-height: 74px;
+    letter-spacing: -1px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #E16E25;
+    -webkit-text-fill-color: #321615;
+}
+
+
 .btn--playnow:hover{transform:translateY(-2px);}
 
 /*
@@ -80,7 +103,31 @@ nav#menu__mobile .sub-menu{display:none}
 */
 .home-wellcome{position:relative;background:url(../img/home-wellcome-bg-mb.jpg) no-repeat center;background-size:100% 100%;padding:63% 0;}
 .home-wellcome:after{content:'';width:100%;height:10%;position:absolute;bottom:0;left:0;background:linear-gradient(180deg,rgba(46,24,20,0) 0%,#281514 100%);}
-.home-wellcome--play{position:absolute;left:0;right:0;bottom:9%;width:180px;height:70px;background:url(../img/playnow.png) no-repeat center;background-size:contain;margin:auto;z-index:10;transition:all .5s;}
+
+.home-wellcome--play {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 16%;
+    width: 180px;
+    height: 70px;
+    background: url(../img/button.png) no-repeat center;
+    background-size: contain;
+    margin: auto;
+    z-index: 10;
+    transition: all .5s;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 18px;
+    color: #321615;
+    line-height: 68px;
+    letter-spacing: -1px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #E16E25;
+    -webkit-text-fill-color: #321615;
+}
 .home-wellcome--play:hover{transform:translateY(-2px);}
 .home-wellcome--nextpage{position:absolute;left:0;right:0;bottom:5%;width:44px;height:34px;z-index:10;background:url(../img/next-page.png) no-repeat center;background-size:contain;margin:auto;-webkit-animation-name:Mousex;-webkit-animation-duration:1.5s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:ease-in-out;-moz-animation-name:Mouse;-moz-animation-duration:1.5s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:ease-in-out;}
 @-webkit-keyframes Mousex{
@@ -102,6 +149,22 @@ nav#menu__mobile .sub-menu{display:none}
 .home-wellcome--fire.-top--right{left:auto;width:12.5%;height:19.2%;bottom:10%;right:19%;}
 .home-wellcome--fire.-bottom--right{left:auto;right:1%;}
 .home-wellcome--door{position:absolute;width:31%;height:53%;bottom:17%;left:0;right:0;background:url(../img/door.png) no-repeat center;background-size:contain;margin:auto;z-index:11;}
+
+.home-wellcome .el__logo{
+  position: absolute;
+  top: 27%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+   font-family:Bungee;font-weight:bold;font-size:16px;color:#1D1A1A;letter-spacing:-2px;
+  text-align:center;text-shadow:0px 4px 4px rgb(0 0 0 / 25%);text-transform:uppercase;
+  -webkit-text-stroke:1px #1D1A1A;-webkit-text-fill-color:white;
+
+}
+.home-wellcome .el__logo img{
+    max-width: 67%;
+}
 
 /*
 ======================================
@@ -141,7 +204,28 @@ nav#menu__mobile .sub-menu{display:none}
 .home-island .slick-dots li button{width:20px;background-color:#8B706F;}
 
 /**/
-.btn__khampha{display:inline-block;width:220px;height:80px;margin:0 -25px;background:url(../img/btn-khampha-mb.png) no-repeat center;background-size:contain;z-index:10;transition:all .5s;}
+.btn__khampha {
+    display: inline-block;
+    width: 220px;
+    height: 80px;
+    margin: 0 -25px;
+    background: url(../img/button-sm.png) no-repeat center;
+    background-size: contain;
+    z-index: 10;
+    transition: all .5s;
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 18px;
+    color: #321615;
+    line-height: 74px;
+    letter-spacing: -1px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #E16E25;
+    -webkit-text-fill-color: #321615;
+}
+
 .btn__khampha:hover{transform:translateY(-2px);}
 
 /*
@@ -328,7 +412,7 @@ nav#menu__mobile .sub-menu{display:none}
 .about::before{content:'';position:absolute;top:0;left:0;width:318px;height:100%;
 max-width: 100%;
   background:url(../img/pages/about-bg-top.png) no-repeat;background-position:top left;background-size:contain;opacity:0.7;z-index:-1;}
-.about-content{position:relative;padding:115px 0 140px;}
+.about-content{position:relative;padding:115px 0 80px;}
 .about-content .sc__header{margin-bottom:20px;}
 .about-content--nextpage{display:block;width:63px;height:48px;background:url(../img/next-page.png) no-repeat center;background-size:contain;margin:auto;-webkit-animation-name:Mousex;-webkit-animation-duration:1.5s;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:ease-in-out;-moz-animation-name:Mouse;-moz-animation-duration:1.5s;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:ease-in-out;}
 .about-ourteam .el__item{position:relative;margin-bottom:40px;}
@@ -435,6 +519,11 @@ footer.footer{position:relative;background:url(../img/footer-bg.png) no-repeat c
 }
 @media (min-width:768px){
   .modalpaper .modal-dialog{max-width:550px;}
+
+  .home-wellcome .el__logo{
+font-size:26px;
+}
+
 }
 @media (min-width:1600px){
   .modalpaper .modal-dialog{max-width:880px;}
