@@ -307,6 +307,10 @@ nav#menu__mobile .sub-menu{display:none}
 .home-collection{padding:50px 0 0;text-align:center;}
 .home-collection__box{position:relative;z-index:10;}
 .home-collection__slider{background:url(../img/home-collection-shadow.png) no-repeat center;background-size:100% 100%;max-width:414px;margin:0 auto;}
+.home-collection__slider .slick-dots li button {
+    width: 10px;
+}
+
 .home-collection .slick-prev{left:0;}
 .home-collection .slick-next{right:0;}
 .home-collection .dnfix__thumb{padding-top:100%;}
