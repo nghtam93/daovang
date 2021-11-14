@@ -43,7 +43,7 @@ header.header{position:fixed;top:0;left:0;right:0;z-index:11;-webkit-animation:s
 header.header .header__wrap{width:100%;display:flex;justify-content:center;background:url(../img/menu-bg-mb.png) no-repeat center;background-size:100% 100%;background-position:top;}
 header.header .logo{margin-top:10px;margin-bottom:0;padding-bottom:12px;}
 header.header img{max-height:45px;}
-.header__menu__btn{position:absolute;top:15px;left:15px;}
+.header__menu__btn{position:absolute;top:15px;left:15px;cursor: pointer;}
 
 /*
 ======================================
