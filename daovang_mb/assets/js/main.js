@@ -92,8 +92,8 @@ $(function() {
 	}
 	if($('body').hasClass('maps')){
 		$('#mapTab .nav-link').on("click",function(e) {
-			var offset_top = $('.maps-content').offset().top;
-			$("html, body").animate({scrollTop:offset_top},500)
+			// var offset_top = $('.maps-content').offset().top;
+			// $("html, body").animate({scrollTop:offset_top},500)
 			var bg = $(this).data('bg');
 			var sub = $(this).data('sub');
 			$('.maps-header').css('background-image','url('+bg+')')

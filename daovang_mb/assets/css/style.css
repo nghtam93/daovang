@@ -421,7 +421,9 @@ footer.footer{position:relative;background:url(../img/footer-bg.png) no-repeat c
 .maps-header{position:relative;margin-top:50px;padding:50px 0 100px;background-size:cover;background-position:center;background-repeat:no-repeat;transition:all .5s;}
 .maps-header:after{content:"";position:absolute;width:100%;height:16%;left:0px;bottom:0;background:linear-gradient(180deg,rgba(46,24,20,0) 0%,#281514 100%);}
 .maps-header .home-wellcome--nameplate{position:absolute;bottom:0;width:16.2%;height:42.7%;right:7.2%;background:url(../img/home-wellcome-table.png) no-repeat center;background-size:contain;z-index:10;}
-.maps-header .el__tabs{flex-wrap:nowrap;border:0;justify-content:start;margin-bottom:180px;height:72px;overflow:auto;margin-left:var(--bs-gutter-x,-.75rem);margin-right:var(--bs-gutter-x,-.75rem);}
+.maps-header .el__tabs{flex-wrap:nowrap;border:0;justify-content:start;
+padding: 15px 0 25px;
+  margin-bottom:140px;height:80px;overflow:auto;margin-left:var(--bs-gutter-x,-.75rem);margin-right:var(--bs-gutter-x,-.75rem);}
 .maps-header .el__tabs::-webkit-scrollbar {
   display: none;
 }
